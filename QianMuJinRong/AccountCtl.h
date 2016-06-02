@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AccountCtl.h
 //  QianMuJinRong
 //
 //  Created by Zec on 16/6/2.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AccountCtl : UIViewController
 
 @end
-

@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Zec. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainCtl.h"
 
-@interface ViewController ()
+@interface MainCtl ()
 
 @end
 
-@implementation ViewController
+@implementation MainCtl
 
 - (void)viewDidLoad {
     [super viewDidLoad];
