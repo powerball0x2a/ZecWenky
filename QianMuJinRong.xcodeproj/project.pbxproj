@@ -19,9 +19,13 @@
 		91E5843B1CFFC09D00D254CB /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E5843A1CFFC09D00D254CB /* Account.storyboard */; };
 		91E584411CFFC23D00D254CB /* InvestmentCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E584401CFFC23D00D254CB /* InvestmentCtl.m */; };
 		91E584441CFFC25300D254CB /* AccountCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E584431CFFC25300D254CB /* AccountCtl.m */; };
+		AF87086B34134C2C541AF3F2 /* libPods-QianMuJinRong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A87A30D7658E7FC56D6B62 /* libPods-QianMuJinRong.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0037A7C6F28B413D2275FECA /* Pods-QianMuJinRong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianMuJinRong.release.xcconfig"; path = "Pods/Target Support Files/Pods-QianMuJinRong/Pods-QianMuJinRong.release.xcconfig"; sourceTree = "<group>"; };
+		46A87A30D7658E7FC56D6B62 /* libPods-QianMuJinRong.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QianMuJinRong.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		810365B48B033C7F6F8536F5 /* Pods-QianMuJinRong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianMuJinRong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QianMuJinRong/Pods-QianMuJinRong.debug.xcconfig"; sourceTree = "<group>"; };
 		91E584181CFFBEBC00D254CB /* QianMuJinRong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QianMuJinRong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E5841C1CFFBEBC00D254CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91E5841E1CFFBEBC00D254CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF87086B34134C2C541AF3F2 /* libPods-QianMuJinRong.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		876EAA46783B2EF6F8FF2BF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				810365B48B033C7F6F8536F5 /* Pods-QianMuJinRong.debug.xcconfig */,
+				0037A7C6F28B413D2275FECA /* Pods-QianMuJinRong.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		91E5840F1CFFBEBC00D254CB = {
 			isa = PBXGroup;
 			children = (
 				91E5841A1CFFBEBC00D254CB /* QianMuJinRong */,
 				91E584191CFFBEBC00D254CB /* Products */,
+				876EAA46783B2EF6F8FF2BF7 /* Pods */,
+				A03FD4424CED2E8209FA4D57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +143,14 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
+		A03FD4424CED2E8209FA4D57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A87A30D7658E7FC56D6B62 /* libPods-QianMuJinRong.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E584321CFFBEBC00D254CB /* Build configuration list for PBXNativeTarget "QianMuJinRong" */;
 			buildPhases = (
+				93D76F367D4B8CF503B540B0 /* 📦 Check Pods Manifest.lock */,
 				91E584141CFFBEBC00D254CB /* Sources */,
 				91E584151CFFBEBC00D254CB /* Frameworks */,
 				91E584161CFFBEBC00D254CB /* Resources */,
+				925ED1C6F9AA800FCF6AEBBA /* 📦 Embed Pods Frameworks */,
+				1073F7BA253C9812A05599EC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1073F7BA253C9812A05599EC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QianMuJinRong/Pods-QianMuJinRong-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925ED1C6F9AA800FCF6AEBBA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QianMuJinRong/Pods-QianMuJinRong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D76F367D4B8CF503B540B0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91E584141CFFBEBC00D254CB /* Sources */ = {
@@ -317,6 +392,7 @@
 		};
 		91E584331CFFBEBC00D254CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810365B48B033C7F6F8536F5 /* Pods-QianMuJinRong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QianMuJinRong/Info.plist;
@@ -328,6 +404,7 @@
 		};
 		91E584341CFFBEBC00D254CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0037A7C6F28B413D2275FECA /* Pods-QianMuJinRong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QianMuJinRong/Info.plist;
@@ -356,6 +433,7 @@
 				91E584341CFFBEBC00D254CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

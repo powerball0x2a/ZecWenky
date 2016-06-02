@@ -8,7 +8,7 @@
         <!--Main Tab Bar Ctl-->
         <scene sceneID="nSt-9l-csF">
             <objects>
-                <tabBarController id="XIt-gx-o7o" customClass="MainTabBarCtl" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarCtl" id="XIt-gx-o7o" customClass="MainTabBarCtl" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="4VQ-40-Mnz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -23,7 +23,7 @@
         <!--Navigation Controller-->
         <scene sceneID="BKZ-Va-ASf">
             <objects>
-                <navigationController id="6HL-ff-YGY" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UINavigationController" id="6HL-ff-YGY" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dal-sO-0mS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -35,7 +35,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzG-kX-uh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-254" y="248"/>
+            <point key="canvasLocation" x="-378" y="159"/>
         </scene>
         <!--Main Ctl-->
         <scene sceneID="tne-QT-ifu">
