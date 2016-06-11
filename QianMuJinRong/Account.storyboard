@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Zec Navigation Ctl-->
         <scene sceneID="r5h-6F-eQz">
             <objects>
-                <navigationController id="toi-Ad-BkJ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AccountNavCtl" id="toi-Ad-BkJ" customClass="ZecNavigationCtl" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sg8-gK-tQG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="-743" y="12"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Zec Navigation Ctl-->
         <scene sceneID="BKZ-Va-ASf">
             <objects>
-                <navigationController storyboardIdentifier="UINavigationController" id="6HL-ff-YGY" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UINavigationController" id="6HL-ff-YGY" customClass="ZecNavigationCtl" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dal-sO-0mS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -49,12 +49,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="首页" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVQ-Xc-xqa">
-                                <rect key="frame" x="147" y="273" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-2G-CQ5">
+                                <rect key="frame" x="113" y="269" width="95" height="30"/>
+                                <state key="normal" title="首页">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AjJ-ZY-c31" kind="push" id="jPX-gL-wFt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -64,6 +67,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="351" y="184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vtb-Wu-Lgf">
+            <objects>
+                <viewController id="AjJ-ZY-c31" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vpq-Hc-eq0"/>
+                        <viewControllerLayoutGuide type="bottom" id="xW6-97-XYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CUP-M8-P0T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lhl-Vl-dDP"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJb-Ee-Bh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="197"/>
         </scene>
     </scenes>
 </document>

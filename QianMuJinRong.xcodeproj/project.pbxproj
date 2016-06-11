@@ -10,7 +10,6 @@
 		91E5841D1CFFBEBC00D254CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E5841C1CFFBEBC00D254CB /* main.m */; };
 		91E584201CFFBEBC00D254CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E5841F1CFFBEBC00D254CB /* AppDelegate.m */; };
 		91E584231CFFBEBC00D254CB /* MainCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E584221CFFBEBC00D254CB /* MainCtl.m */; };
-		91E584261CFFBEBC00D254CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E584241CFFBEBC00D254CB /* Main.storyboard */; };
 		91E584291CFFBEBC00D254CB /* QianMuJinRong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91E584271CFFBEBC00D254CB /* QianMuJinRong.xcdatamodeld */; };
 		91E5842B1CFFBEBC00D254CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E5842A1CFFBEBC00D254CB /* Assets.xcassets */; };
 		91E5842E1CFFBEBC00D254CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E5842C1CFFBEBC00D254CB /* LaunchScreen.storyboard */; };
@@ -19,6 +18,10 @@
 		91E5843B1CFFC09D00D254CB /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E5843A1CFFC09D00D254CB /* Account.storyboard */; };
 		91E584411CFFC23D00D254CB /* InvestmentCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E584401CFFC23D00D254CB /* InvestmentCtl.m */; };
 		91E584441CFFC25300D254CB /* AccountCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E584431CFFC25300D254CB /* AccountCtl.m */; };
+		91F054F11D0BD18800414D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F054F01D0BD18800414D76 /* Main.storyboard */; };
+		91F054F41D0BD4DA00414D76 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F054F31D0BD4DA00414D76 /* TestViewController.m */; };
+		91F054F71D0BD99200414D76 /* ZecNavigationCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F054F61D0BD99200414D76 /* ZecNavigationCtl.m */; };
+		91F054FD1D0BDB4200414D76 /* ZecHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F054FC1D0BDB4200414D76 /* ZecHTTPSessionManager.m */; };
 		AF87086B34134C2C541AF3F2 /* libPods-QianMuJinRong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A87A30D7658E7FC56D6B62 /* libPods-QianMuJinRong.a */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +35,6 @@
 		91E5841F1CFFBEBC00D254CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		91E584211CFFBEBC00D254CB /* MainCtl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCtl.h; sourceTree = "<group>"; };
 		91E584221CFFBEBC00D254CB /* MainCtl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCtl.m; sourceTree = "<group>"; };
-		91E584251CFFBEBC00D254CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E584281CFFBEBC00D254CB /* QianMuJinRong.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QianMuJinRong.xcdatamodel; sourceTree = "<group>"; };
 		91E5842A1CFFBEBC00D254CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E5842D1CFFBEBC00D254CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,13 @@
 		91E584401CFFC23D00D254CB /* InvestmentCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestmentCtl.m; sourceTree = "<group>"; };
 		91E584421CFFC25300D254CB /* AccountCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCtl.h; sourceTree = "<group>"; };
 		91E584431CFFC25300D254CB /* AccountCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCtl.m; sourceTree = "<group>"; };
+		91F054F01D0BD18800414D76 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		91F054F21D0BD4DA00414D76 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		91F054F31D0BD4DA00414D76 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		91F054F51D0BD99200414D76 /* ZecNavigationCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZecNavigationCtl.h; sourceTree = "<group>"; };
+		91F054F61D0BD99200414D76 /* ZecNavigationCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZecNavigationCtl.m; sourceTree = "<group>"; };
+		91F054FB1D0BDB4200414D76 /* ZecHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZecHTTPSessionManager.h; sourceTree = "<group>"; };
+		91F054FC1D0BDB4200414D76 /* ZecHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZecHTTPSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +102,10 @@
 				91E5841F1CFFBEBC00D254CB /* AppDelegate.m */,
 				91E584351CFFBFE600D254CB /* MainTabBarCtl.h */,
 				91E584361CFFBFE600D254CB /* MainTabBarCtl.m */,
+				91F054F51D0BD99200414D76 /* ZecNavigationCtl.h */,
+				91F054F61D0BD99200414D76 /* ZecNavigationCtl.m */,
+				91F054FB1D0BDB4200414D76 /* ZecHTTPSessionManager.h */,
+				91F054FC1D0BDB4200414D76 /* ZecHTTPSessionManager.m */,
 				91E5843C1CFFC0FE00D254CB /* MainPage */,
 				91E5843D1CFFC12600D254CB /* Investment */,
 				91E5843E1CFFC14800D254CB /* Account */,
@@ -116,9 +129,11 @@
 		91E5843C1CFFC0FE00D254CB /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				91E584241CFFBEBC00D254CB /* Main.storyboard */,
+				91F054F01D0BD18800414D76 /* Main.storyboard */,
 				91E584211CFFBEBC00D254CB /* MainCtl.h */,
 				91E584221CFFBEBC00D254CB /* MainCtl.m */,
+				91F054F21D0BD4DA00414D76 /* TestViewController.h */,
+				91F054F31D0BD4DA00414D76 /* TestViewController.m */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
@@ -212,10 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E5842E1CFFBEBC00D254CB /* LaunchScreen.storyboard in Resources */,
+				91F054F11D0BD18800414D76 /* Main.storyboard in Resources */,
 				91E584391CFFC04D00D254CB /* Investment.storyboard in Resources */,
 				91E5843B1CFFC09D00D254CB /* Account.storyboard in Resources */,
 				91E5842B1CFFBEBC00D254CB /* Assets.xcassets in Resources */,
-				91E584261CFFBEBC00D254CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E584411CFFC23D00D254CB /* InvestmentCtl.m in Sources */,
+				91F054FD1D0BDB4200414D76 /* ZecHTTPSessionManager.m in Sources */,
 				91E584291CFFBEBC00D254CB /* QianMuJinRong.xcdatamodeld in Sources */,
 				91E584371CFFBFE600D254CB /* MainTabBarCtl.m in Sources */,
 				91E584231CFFBEBC00D254CB /* MainCtl.m in Sources */,
 				91E584441CFFC25300D254CB /* AccountCtl.m in Sources */,
+				91F054F71D0BD99200414D76 /* ZecNavigationCtl.m in Sources */,
+				91F054F41D0BD4DA00414D76 /* TestViewController.m in Sources */,
 				91E584201CFFBEBC00D254CB /* AppDelegate.m in Sources */,
 				91E5841D1CFFBEBC00D254CB /* main.m in Sources */,
 			);
@@ -287,14 +305,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		91E584241CFFBEBC00D254CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91E584251CFFBEBC00D254CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		91E5842C1CFFBEBC00D254CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

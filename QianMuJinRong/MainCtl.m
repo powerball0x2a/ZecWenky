@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)jumpToTestPage:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"MainToTest" sender:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

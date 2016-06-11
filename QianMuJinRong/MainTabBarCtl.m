@@ -10,6 +10,7 @@
 #import "MainCtl.h"
 #import "InvestmentCtl.h"
 #import "AccountCtl.h"
+#import "ZecNavigationCtl.h"
 
 
 @interface MainTabBarCtl ()
@@ -22,11 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UINavigationController *nav1 = [self storyboard:@"Main" identifier:@"MainCtl"];
+    ZecNavigationCtl *nav1 = (ZecNavigationCtl *)[self storyboard:@"Main" identifier:@"MainNavCtl"];
     [self tabbarItem:@"主页" image:@"image" nav:nav1];
-    UINavigationController *nav2 = [self storyboard:@"Investment" identifier:@"InvestmentCtl"];
+    ZecNavigationCtl *nav2 = (ZecNavigationCtl *)[self storyboard:@"Investment" identifier:@"InvestmentNavCtl"];
     [self tabbarItem:@"投资" image:@"image" nav:nav2];
-    UINavigationController *nav3 = [self storyboard:@"Account" identifier:@"AccountCtl"];
+    ZecNavigationCtl *nav3 = (ZecNavigationCtl *)[self storyboard:@"Account" identifier:@"AccountNavCtl"];
     [self tabbarItem:@"个人资料" image:@"image" nav:nav3];
     
     self.viewControllers = @[nav1,nav2,nav3];

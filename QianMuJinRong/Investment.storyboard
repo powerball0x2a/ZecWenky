@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Zec Navigation Ctl-->
         <scene sceneID="6B0-Sv-LkS">
             <objects>
-                <navigationController id="fpW-MV-Z2k" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InvestmentNavCtl" id="fpW-MV-Z2k" customClass="ZecNavigationCtl" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L82-0T-DYw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -34,12 +34,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投资" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2l-EA-QFo">
-                                <rect key="frame" x="147" y="273" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLk-Gp-DSp">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="投资">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HDV-Jo-6h4" kind="push" id="bnH-UG-X7G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -49,6 +52,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqI-Mj-22s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280" y="404"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v3O-74-18e">
+            <objects>
+                <viewController id="HDV-Jo-6h4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pHh-X1-JJ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dz2-YV-qEQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03z-GE-d9i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xrJ-DH-hWE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMt-KS-mGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="516"/>
         </scene>
     </scenes>
 </document>
